@@ -8,8 +8,6 @@ Everybody planning to participate should read the following,
 - Join us at [jMonkeyEngine Forum](https://hub.jmonkeyengine.org/)
 - You could also join our Discord channel at ** //todo **
 
-
-
 ## Proposed Projects 
 
 | Proposal      | Status        | Mentor |
@@ -22,6 +20,7 @@ Everybody planning to participate should read the following,
 | [Mobile Demos](#mobile-demos) | Needs student |              |
 | [Bring your own idea](#bring-your-own-idea) | |
 
+Students can propose their own idea. Please post you idea in the forum. You can also look at [past project list](GSoC_2014.md). 
 
 ### General Requirement
 Unless otherwise specified, all projects require some hands-on experience and general familiarity with jME3 as well as intermediate to high level of Java knowledge.
