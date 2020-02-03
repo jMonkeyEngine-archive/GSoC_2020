@@ -201,6 +201,19 @@ Primary goal: Create a demo for fully functional achievements working across And
  - https://developers.google.com/games/services/
 
 ## Mobile Demos
+#### Project Description
+We have a demo app for Android, but its test scenes are outdated and we’ve now added iOS to our supported platforms.
+
+There should be a common “Mobile Demos” app with:
+- Tests optimized for mobile.
+- Apps made for both Android and iOS
+#### Expected outcome
+#### Skills required/preferred (outline of skills required)
+#### Tests (Students will do one or more of the following tests before contacting the mentors)
+#### Possible mentor
+#### Difficulty of the project
+#### Further Reading (links to code, docs and conversations)
+https://play.google.com/store/apps/details?id=com.jme3.androiddemo
 
 ## Bring your own idea
 Students can propose their own ideas. Please make sure you have the following contents.
