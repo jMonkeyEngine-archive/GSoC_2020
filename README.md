@@ -20,7 +20,8 @@ Everybody planning to participate should read the following,
 | [Mobile Demos](#mobile-demos) | Needs student |              |
 | [Bring your own idea](#bring-your-own-idea) | |
 
-Students can propose their own idea. Please post you idea in the forum. You can also look at [past project list](GSoC_2014.md) for inspiration. 
+Students can propose their own idea. Please post you idea in the forum. You can also look at [past project list](GSoC_2014.md) for inspiration. Please note that we are prioritizing ideas that would be maintained even after GSoC.
+
 
 ### General Requirement
 Unless otherwise specified, all projects require some hands-on experience and general familiarity with jME3 as well as intermediate to high level of Java knowledge.
@@ -215,12 +216,11 @@ There should be a common “Mobile Demos” app with:
 https://play.google.com/store/apps/details?id=com.jme3.androiddemo
 
 ## Bring your own idea
-Students can propose their own ideas. Please make sure you have the following contents.
+Students can propose their own ideas. Please make sure you have the following contents. You can also look at [past project list](GSoC_2014.md) for inspiration. Please note that we are prioritizing ideas that would be maintained even after GSoC.
 
 #### Project Description
 #### Expected outcome
 #### Skills required/preferred (outline of skills required)
-#### Tests (Students will do one or more of the following tests before contacting the mentors)
 #### Possible mentor
 #### Difficulty of the project
 #### Further Reading (links to code, docs and conversations)
