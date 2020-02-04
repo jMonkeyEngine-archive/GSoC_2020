@@ -1,4 +1,4 @@
-# jMonkey Engine - Google Summer of Code 2020 Ideas list
+# jMonkeyEngine - Google Summer of Code 2020 Ideas list
 
 Welcome to the jMonkeyEngine Google Summer of Code [GSoC 2020](https://summerofcode.withgoogle.com/) wiki. This will hold a list of ideas for students.
 
