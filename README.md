@@ -7,6 +7,7 @@ Everybody planning to participate should read the following,
 - [Google FAQ](https://developers.google.com/open-source/gsoc/faq) so you know how GSOC works,
 - Join us at [jMonkeyEngine Forum](https://hub.jmonkeyengine.org/)
 - You could also join our Discord channel at ** //todo **
+- [Here](https://hub.jmonkeyengine.org/g) you and find more about our team.
 
 ## Proposed Projects 
 
