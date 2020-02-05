@@ -15,10 +15,10 @@ Everybody planning to participate should read the following,
 | ------------- | ------------- | ------ |
 | [Minie Simple Game](#minie-simple-game) | Needs student |  sgold            |
 | [Asset Pipeline Workflow for Blender](#asset-pipeline-workflow-for-blender) | Needs student |  The_Leo            |
-| [Video Playback](#video-playback) | Needs student |  DarkChaos            |
-| [Improve Shader Node](#improve-shader-node) | Needs student |  DarkChaos            |
-| [Integrate with Google Play game services](#integrate-with-google-play-game-services) | Needs student |  DarkChaos            |
-| [Mobile Demos](#mobile-demos) | Needs student |              |
+| [Video Playback](#video-playback) | Needs student |  Darkchaos/[MeFisto94](https://github.com/MeFisto94)  |
+| [Improve Shader Node](#improve-shader-node) | Needs student |  Darkchaos/[MeFisto94](https://github.com/MeFisto94)  |
+| [Integrate with Google Play game services](#integrate-with-google-play-game-services) | Needs student |  Darkchaos/[MeFisto94](https://github.com/MeFisto94) |
+| [Mobile Demos](#mobile-demos) | Needs student | Darkchaos/[MeFisto94](https://github.com/MeFisto94) |
 | [Bring your own idea](#bring-your-own-idea) | |
 
 Students can propose their own idea. Please post you idea in the forum. You can also look at [past project list](GSoC_2014.md) for inspiration. Please note that we are prioritizing ideas that would be maintained even after GSoC.
@@ -119,37 +119,44 @@ Medium
 ## Video Playback
 
 #### Project Description
-I still didn’t get around to do a full write up on libwebm/libvpx, so I am doing this here in quick bullet points and write it more detailed when/if the idea makes it through:
+Playing media/videos in video games is an integral part but hard to use because of the availability of codecs their patents and the required toolset to work with them.
+The .webm container format using libvpx (VP8, 9, 10) codecs is what drives the web "HTML 5 Video" and is what Youtube uses.
+It's open source and developed by Google. It's also available free of charge (H.264 aka "mp4" is NOT).
 
-Story: We all know playing media/videos in Videogames is painful because of codecs, law, etc.
-The webm container format using the libvpx (VP8, 9, 10) codecs is what drives the web “HTML 5 VIdeo”, what Youtube uses, etc. It’s open source and developed by google. It’s also available free of charge (I think there is confusion with X264 vs. H.264 there).
-
-As opposed to other solutions I got suggested (using VLC or JavaFX), this one would be tightly integrated and potential (flex goal) also work on Android.
-
-One upside of this feature is it guides the student through all phases:
+As opposed to other solutions I got suggested (using VLC or Java FX), this one would be tightly integrated and (potential flex goal) also work on Android or other embedded platforms where Java FX or VLC Support might be tricky.
+One upside of this feature is it guides the student through all phases (see expected outcome)
 
 #### Expected outcome
-
-Research around libvpx, JNI (they even provide bindings already), jME/openGL, Color Spaces etc.
-Design a Video API to maybe make it into core. There I’ll need paul’s help and we have to see if we can get away with a quad [or anything generic] and just a control.
-Still we need to design multiple things: a) Lockstep [fetch a new frame every frame] b) fps invariant movies [don’t speed down when frames drop, run decoding in own thread and just push textures locked]
-Implement libwebM Parser and vpx decoder according to the interface in 2
-Test, Cleanups, Integrate like jme3-bullet-native (automatic compliation and packaging the native files in a jar)
-From here on stretch goals:
-Android. HW Accel? Conversion YUV2 -> RGB(A) as ShaderLib/dedicated material.
-Example Shader with some “old TV” style distortion to show of how the shader lib can be used, to prevent re-writing the YUV2->RGB conversion.
-Audio and synchronization!
+- Research around libvpx, JNI (libvpx even provides jni bindings already), jME/openGL, Color Spaces etc.
+- Design a Video API to generify video playback in jMonkeyEngine, irrelevant of the used codec or display implementation.
+- Specifically design:
+  - Lockstep (fetch a new video frame every game frame, playback fps depend on game fps)
+  - FPS invariant movies (don’t speed down when frames drop, run decoding in own thread and just push textures at a fixed rate)
+- Implement the libwebM container parser and vpx decoder according to the interface outlined above
+- Unit Testing, Cleanups, Integration similar to jme3-bullet-native (automatic compliation and packaging the native files in a jar)
+- From here on stretch goals:
+   - Support for Android (Potentially just compile flags)
+   - Hardware Acceleration: Conversion from YUV2 -> RGB(A) as ShaderLib/dedicated material (Color Space Conversion on the GPU vs. CPU)
+   - Example Shader with some "old TV" style distortion to show how the shaderlib can be used, to prevent re-writing the YUV2->RGB conversion for every shader wanting to display a video
+   - Audio Synchronization
 
 #### Skills required/preferred (outline of skills required)
-//todo
+- Knowledge of JNI or C(++), specifically about heap memory management using pointers required
+- Knowledge about Multi-Threading mechanisms (e.g. Locks, Thread Safe Queues) required
+- Knowledge about Rendering, preferrably OpenGL or jMonkeyEngine preferred
+- Knowledge of GLSL, the OpenGL Shading Language, preferred
+
 #### Tests (Students will do one or more of the following tests before contacting the mentors)
-//todo
+- Write a jMonkeyEngine Shader (j3md) and a small contained sample which loads a texture in "YUV888" Format (a "hardcoded" texture is also okay, no need to write a .yuv loader) and converts it to RGB, so the rendered quad looks identical to the imageviewer.
+
 #### Possible mentor
-DarkChaos
+Darkchaos/[MeFisto94](https://github.com/MeFisto94)
 #### Difficulty of the project
 Medium-Hard
 #### Further Reading (links to code, docs and conversations)
-//todo
+https://chromium.googlesource.com/webm/bindings/+/refs/heads/master/JNI/
+https://chromium.googlesource.com/webm/libwebm/
+https://chromium.googlesource.com/webm/libvpx/
 
 ## Improve Shader Node
 
