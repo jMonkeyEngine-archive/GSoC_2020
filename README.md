@@ -147,7 +147,7 @@ One upside of this feature is it guides the student through all phases (see expe
 - Knowledge of GLSL, the OpenGL Shading Language, preferred
 
 #### Tests (Students will do one or more of the following tests before contacting the mentors)
-- Write a jMonkeyEngine Shader (j3md) and a small contained sample which loads a texture in YUV Format (use the regular RGB8 setting) and converts it to RGB, so the rendered quad looks identical to the image.
+- Write a jMonkeyEngine Shader (j3md) and a small contained sample which loads a texture in "YUV888" Format (a "hardcoded" texture is also okay, no need to write a .yuv loader) and converts it to RGB, so the rendered quad looks identical to the imageviewer.
 
 #### Possible mentor
 Darkchaos/[MeFisto94](https://github.com/MeFisto94)
