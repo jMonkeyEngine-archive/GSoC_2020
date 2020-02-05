@@ -17,7 +17,7 @@ Everybody planning to participate should read the following,
 | [Asset Pipeline Workflow for Blender](#asset-pipeline-workflow-for-blender) | Needs student | [The_Leo](https://hub.jmonkeyengine.org/u/the_leo/summary) / [TehLeo](https://github.com/TehLeo) |
 | [Video Playback](#video-playback) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)  |
 | [Improve Shader Node](#improve-shader-node) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)  |
-| [Integrate with Google Play game services](#integrate-with-google-play-game-services) | Needs student |  [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94) |
+| [Integrate with Google Play Game Services](#integrate-with-google-play-game-services) | Needs student |  [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94) |
 | [Mobile Demos](#mobile-demos) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94) |
 | [Bring your own idea](#bring-your-own-idea) | |
 
