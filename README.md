@@ -151,7 +151,7 @@ Medium-Hard
 #### Further Reading (links to code, docs and conversations)
 //todo
 
-## Improve Shader Node
+## Improve Shader Node (Incubating)
 
 #### Project Description
 Replicate PBRLighting/Lighting with Shader Nodes as a starting point for others
