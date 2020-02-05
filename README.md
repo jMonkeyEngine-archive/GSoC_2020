@@ -7,14 +7,14 @@ Everybody planning to participate should read the following,
 - [Google FAQ](https://developers.google.com/open-source/gsoc/faq) so you know how GSOC works,
 - Join us at [jMonkeyEngine Forum](https://hub.jmonkeyengine.org/)
 - You could also join our Discord channel at ** //todo **
-- [Here](https://hub.jmonkeyengine.org/g) you and find more about our team.
+- [Here](https://hub.jmonkeyengine.org/g) you can find more about our team.
 
 ## Proposed Projects
 
 | Proposal      | Status        | Mentor (Forum Nick / Github Nick) |
 | ------------- | ------------- | ------ |
 | [Minie Simple Game](#minie-simple-game) | Needs student | [sgold](https://hub.jmonkeyengine.org/u/sgold/summary) / [stephengold](https://github.com/stephengold) |
-| [Asset Pipeline Workflow for Blender](#asset-pipeline-workflow-for-blender) | Needs student | [The_Leo](https://hub.jmonkeyengine.org/u/the_leo/summary) / [TehLeo](https://github.com/tehleo) |
+| [Asset Pipeline Workflow for Blender](#asset-pipeline-workflow-for-blender) | Needs student | [The_Leo](https://hub.jmonkeyengine.org/u/the_leo/summary) / [TehLeo](https://github.com/TehLeo) |
 | [Video Playback](#video-playback) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)  |
 | [Improve Shader Node](#improve-shader-node) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)  |
 | [Integrate with Google Play game services](#integrate-with-google-play-game-services) | Needs student |  [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94) |
@@ -103,7 +103,8 @@ Java Programming, System Design;
 Preferred skills: Capability or willingness to learn basic Blender 3D Python Scripting API
 
 #### Tests (Students will do one or more of the following tests before contacting the mentors)
-//todo
+- Use Blender to generate a simple .gltf file (eg. single cube). Write a console application (without gui/jME canvas) that uses jME AssetManager to load this .gltf file. Now, set the material of the loaded model to Unshaded with Green color. Finally write it back on disk with .j3o file format. 
+- To display it, write a jME application that shows the converted green model.
 
 #### Possible mentor
 @The_Leo (GitHub: TehLeo); can maintain the project if required
@@ -112,8 +113,7 @@ Preferred skills: Capability or willingness to learn basic Blender 3D Python Scr
 Medium
 
 #### Further Reading (links to code, docs and conversations)
-
-//todo
+https://wiki.jmonkeyengine.org/jme3/beginner/hello_asset.html
 
 ## Video Playback
 
