@@ -210,18 +210,45 @@ Primary goal: Create a demo for fully functional achievements working across And
 
 ## Mobile Demos
 #### Project Description
-We have a demo app for Android, but its test scenes are outdated and we’ve now added iOS to our supported platforms.
+In order to advance on the market of Android Gaming, jMonkeyEngine needs to have a dedicated app to test all of our common scenaries in a very handy way.
+This ensures we can find device specific failures really quick and also show off the engines capabilities on Android.
+Rough "Benchmarks" can also be done that way.
 
-There should be a common “Mobile Demos” app with:
-- Tests optimized for mobile.
-- Apps made for both Android and iOS
+We already have a demo app (see below), but it is really simple and uses an outdated way of developing Android Apps (NB Android instead of Android Studio). In addition to that, it has a really simple UX, which could be improved.
+
 #### Expected outcome
+- An app ready to be released to the Android Store that fulfills the following requirements:
+ - Being developed using Gradle and works with Android Studio after a simple git clone
+ - Supports all existing "Tests"/"Examples" (i.e. using some drop-drown field, maybe also with an automatic way of launching each test sequentially and logging exceptions/failures)
+ - Specific Android Showcase Scenarios (i.e. neat looking scenes with plenty of effects like fog, bloom, PBR, ...)
+- Document/Improve Documentation of the current Workflow for Android:
+ - Cross Platform Projects (Android Studio, Run Configurations: On Device, Emulator, Regular Desktop)
+ - Problems along the way (Using Proguard, Native Libraries)
+ - Integration with the Android Ecosystem (e.g Signing an APK, Profiling/Debugging)
+ - Exploring rough limits of devices (e.g. X Verts, Y Draw Calls, Z Texture Memory) for common devices
+- Working tightly with the core team to test and fix android related problems.
+
 #### Skills required/preferred (outline of skills required)
+- Knowledge of Android App Development (Having worked with Android Studio before) is required:
+ - Building an UI
+ - Lifecycle of Activities
+ - Getting the Android Emulator to work
+ - Having an Android Based Smartphone (can't do much without it, sorry)
+ - Using ADB to Debug Problems
+- Knowledge of Java is required
+- Basics of Using Gradle
+- Good English Skills to formulate an understandable documentation
+
 #### Tests (Students will do one or more of the following tests before contacting the mentors)
+- Build an Android App which shows our default [Blue Quad Example](https://wiki.jmonkeyengine.org/jme3/beginner/hello_simpleapplication.html#code-sample)
 #### Possible mentor
+Darkchaos/[MeFisto94](https://github.com/MeFisto94)
 #### Difficulty of the project
+With existing Android Development Experience: Simple - Medium
+The difficulty for this project is mostly coming from learning the jMonkeyEngine Eco-System and GLSL to fix potential Android/ES only problems.
 #### Further Reading (links to code, docs and conversations)
-https://play.google.com/store/apps/details?id=com.jme3.androiddemo
+https://github.com/jMonkeyEngine/JmeAndroidDemo
+https://play.google.com/store/apps/details?id=com.jme3.androiddemo (OFFLINE)
 
 ## Bring your own idea
 Students can propose their own ideas. Please make sure you have the following contents. You can also look at [past project list](GSoC_2014.md) for inspiration. Please note that we are prioritizing ideas that would be maintained even after GSoC.
