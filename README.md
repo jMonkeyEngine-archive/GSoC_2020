@@ -202,19 +202,54 @@ Here are the fixes/enhancements that it needs:
 #### Difficulty of the project
 #### Further Reading (links to code, docs and conversations)
 
-## Integrate with Google Play game services
+## Integrate with Google Play Game Services
 
 #### Project Description
-Especially for mobile/web games there are a lot of common social features like tracking scores on a leaderboard, comparing achievements, inviting friends to play a game and starting a multiplayer game through match-making. Google Play game services provides all of these features, and it is cross-platform (Android, iOS and Web), so it would be a good place to start.
+Especially for mobile/web games there are a lot of common social features like tracking scores on a leaderboard, comparing achievements, inviting friends to play a game and starting a multiplayer game through match-making.  
+Google Play game services provides all of these features, and it is cross-platform (Android, iOS and Web).
 
-Primary goal: Create a demo for fully functional achievements working across Android and iOS.
+Some of those features would greatly benefit from a tight integration with jMonkeyEngine and apart from that having a demo application which shows other devs how to use them is also important.
 
 #### Expected outcome
+
+- Create a sample App which shows all of Play Game Service's features:
+  - Create a wrapper around PGS' Save Game Data Features, so they can be used with jMonkeyEngine's [Savable](https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-core/src/main/java/com/jme3/export/Savable.java) interface
+  - Show how Player progress can be tracked and analysed
+    - How can this be implemented in code?
+    - How does the dashboard look like -> Why is it worth using this feature
+  - Show how the player/account management with Leaderboards can be done
+  - Anti Piracy by checking the License
+  - Video Recording to allow players to share cool scenes with their friends.
+  - Nearby Connections to discover nearby players
+- Document your findings in our [wiki](https://wiki.jmonkeyengine.org/) as well as commenting your code properly, so that others can take it as an example to build their apps upon.
+- Wrap your sample App in a small game, so that the testing process is more enjoyable and you can gather stats from a few more people that way
+
 #### Skills required/preferred (outline of skills required)
+
+- Knowledge of Android App Development (Having worked with Android Studio before) is required:
+  - Building an UI
+  - Lifecycle of Activities
+  - Getting the Android Emulator to work
+  - Having an Android Based Smartphone (can't do much without it, sorry)
+  - Using ADB to Debug Problems
+- Knowledge of Java is required
+- Basics of Using Gradle
+- Good English Skills to formulate an understandable documentation
+
 #### Tests (Students will do one or more of the following tests before contacting the mentors)
+
+- Build an Android App which shows our default [Blue Quad Example](https://wiki.jmonkeyengine.org/jme3/beginner/hello_simpleapplication.html#code-sample)
+
 #### Possible mentor
+
+[Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)
+
 #### Difficulty of the project
+
+With existing Android Development Experience: Simple - Medium
+
 #### Further Reading (links to code, docs and conversations)
+
  - https://developers.google.com/games/services/
 
 ## Mobile Demos
