@@ -9,20 +9,19 @@ Everybody planning to participate should read the following,
 - You could also join our Discord channel at ** //todo **
 - [Here](https://hub.jmonkeyengine.org/g) you can find more about our team.
 
-## Proposed Projects 
+## Proposed Projects
 
-| Proposal      | Status        | Mentor |
+| Proposal      | Status        | Mentor (Forum Nick / Github Nick) |
 | ------------- | ------------- | ------ |
-| [Minie Simple Game](#minie-simple-game) | Needs student |  sgold            |
-| [Asset Pipeline Workflow for Blender](#asset-pipeline-workflow-for-blender) | Needs student |  [The_Leo](https://github.com/TehLeo)            |
-| [Video Playback](#video-playback) | Needs student |  Darkchaos/[MeFisto94](https://github.com/MeFisto94)  |
-| [Improve Shader Node](#improve-shader-node) | Needs student |  Darkchaos/[MeFisto94](https://github.com/MeFisto94)  |
-| [Integrate with Google Play game services](#integrate-with-google-play-game-services) | Needs student |  Darkchaos/[MeFisto94](https://github.com/MeFisto94) |
-| [Mobile Demos](#mobile-demos) | Needs student | Darkchaos/[MeFisto94](https://github.com/MeFisto94) |
+| [Minie Simple Game](#minie-simple-game) | Needs student | [sgold](https://hub.jmonkeyengine.org/u/sgold/summary) / [stephengold](https://github.com/stephengold) |
+| [Asset Pipeline Workflow for Blender](#asset-pipeline-workflow-for-blender) | Needs student | [The_Leo](https://hub.jmonkeyengine.org/u/the_leo/summary) / [TehLeo](https://github.com/TehLeo) |
+| [Video Playback](#video-playback) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)  |
+| [Improve Shader Node](#improve-shader-node) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)  |
+| [Integrate with Google Play game services](#integrate-with-google-play-game-services) | Needs student |  [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94) |
+| [Mobile Demos](#mobile-demos) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94) |
 | [Bring your own idea](#bring-your-own-idea) | |
 
 Students can propose their own idea. Please post you idea in the forum. You can also look at [past project list](GSoC_2014.md) for inspiration. Please note that we are prioritizing ideas that would be maintained even after GSoC.
-
 
 ### General Requirement
 Unless otherwise specified, all projects require some hands-on experience and general familiarity with jME3 as well as intermediate to high level of Java knowledge.
@@ -119,6 +118,7 @@ https://wiki.jmonkeyengine.org/jme3/beginner/hello_asset.html
 ## Video Playback
 
 #### Project Description
+
 Playing media/videos in video games is an integral part but hard to use because of the availability of codecs their patents and the required toolset to work with them.
 The .webm container format using libvpx (VP8, 9, 10) codecs is what drives the web "HTML 5 Video" and is what Youtube uses.
 It's open source and developed by Google. It's also available free of charge (H.264 aka "mp4" is NOT).
@@ -127,6 +127,7 @@ As opposed to other solutions I got suggested (using VLC or Java FX), this one w
 One upside of this feature is it guides the student through all phases (see expected outcome)
 
 #### Expected outcome
+
 - Research around libvpx, JNI (libvpx even provides jni bindings already), jME/openGL, Color Spaces etc.
 - Design a Video API to generify video playback in jMonkeyEngine, irrelevant of the used codec or display implementation.
 - Specifically design:
@@ -135,28 +136,35 @@ One upside of this feature is it guides the student through all phases (see expe
 - Implement the libwebM container parser and vpx decoder according to the interface outlined above
 - Unit Testing, Cleanups, Integration similar to jme3-bullet-native (automatic compliation and packaging the native files in a jar)
 - From here on stretch goals:
-   - Support for Android (Potentially just compile flags)
-   - Hardware Acceleration: Conversion from YUV2 -> RGB(A) as ShaderLib/dedicated material (Color Space Conversion on the GPU vs. CPU)
-   - Example Shader with some "old TV" style distortion to show how the shaderlib can be used, to prevent re-writing the YUV2->RGB conversion for every shader wanting to display a video
-   - Audio Synchronization
+  - Support for Android (Potentially just compile flags)
+  - Hardware Acceleration: Conversion from YUV2 -> RGB(A) as ShaderLib/dedicated material (Color Space Conversion on the GPU vs. CPU)
+  - Example Shader with some "old TV" style distortion to show how the shaderlib can be used, to prevent re-writing the YUV2->RGB conversion for every shader wanting to display a video
+  - Audio Synchronization
 
 #### Skills required/preferred (outline of skills required)
+
 - Knowledge of JNI or C(++), specifically about heap memory management using pointers required
 - Knowledge about Multi-Threading mechanisms (e.g. Locks, Thread Safe Queues) required
 - Knowledge about Rendering, preferrably OpenGL or jMonkeyEngine preferred
 - Knowledge of GLSL, the OpenGL Shading Language, preferred
 
 #### Tests (Students will do one or more of the following tests before contacting the mentors)
+
 - Write a jMonkeyEngine Shader (j3md) and a small contained sample which loads a texture in "YUV888" Format (a "hardcoded" texture is also okay, no need to write a .yuv loader) and converts it to RGB, so the rendered quad looks identical to the imageviewer.
 
 #### Possible mentor
-Darkchaos/[MeFisto94](https://github.com/MeFisto94)
+
+[Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)
+
 #### Difficulty of the project
+
 Medium-Hard
+
 #### Further Reading (links to code, docs and conversations)
-https://chromium.googlesource.com/webm/bindings/+/refs/heads/master/JNI/
-https://chromium.googlesource.com/webm/libwebm/
-https://chromium.googlesource.com/webm/libvpx/
+
+https://chromium.googlesource.com/webm/bindings/+/refs/heads/master/JNI/  
+https://chromium.googlesource.com/webm/libwebm/  
+https://chromium.googlesource.com/webm/libvpx/  
 
 ## Improve Shader Node
 
@@ -165,7 +173,8 @@ Replicate PBRLighting/Lighting with Shader Nodes as a starting point for others
 
 From older GSoC idea:
 The Shader Nodes system in JME3 is not used a lot. It comes with an editor in the SDK but unfortunately, it’s kind of unstable and needs a lot more work.
-Here are the fixes/enhancements that it needs :
+Here are the fixes/enhancements that it needs:
+
 - removing a Mat param from a complex condition makes an invalid condition
 - Condition custom editor or at least a check from the matparam
 - Material property set : remove material parameters (clear button maybe?), display at least texture path in textureEditor (the image if possible) (inplace editor for flip, repeat and so on?)
@@ -209,7 +218,9 @@ Primary goal: Create a demo for fully functional achievements working across And
  - https://developers.google.com/games/services/
 
 ## Mobile Demos
+
 #### Project Description
+
 In order to advance on the market of Android Gaming, jMonkeyEngine needs to have a dedicated app to test all of our common scenaries in a very handy way.
 This ensures we can find device specific failures really quick and also show off the engines capabilities on Android.
 Rough "Benchmarks" can also be done that way.
@@ -217,45 +228,47 @@ Rough "Benchmarks" can also be done that way.
 We already have a demo app (see below), but it is really simple and uses an outdated way of developing Android Apps (NB Android instead of Android Studio). In addition to that, it has a really simple UX, which could be improved.
 
 #### Expected outcome
+
 - An app ready to be released to the Android Store that fulfills the following requirements:
- - Being developed using Gradle and works with Android Studio after a simple git clone
- - Supports all existing "Tests"/"Examples" (i.e. using some drop-drown field, maybe also with an automatic way of launching each test sequentially and logging exceptions/failures)
- - Specific Android Showcase Scenarios (i.e. neat looking scenes with plenty of effects like fog, bloom, PBR, ...)
+  - Being developed using Gradle and works with Android Studio after a simple git clone
+  - Supports all existing "Tests"/"Examples" (i.e. using some drop-drown field, maybe also with an automatic way of launching each test sequentially and logging exceptions/failures)
+  - Specific Android Showcase Scenarios (i.e. neat looking scenes with plenty of effects like fog, bloom, PBR, ...)
 - Document/Improve Documentation of the current Workflow for Android:
- - Cross Platform Projects (Android Studio, Run Configurations: On Device, Emulator, Regular Desktop)
- - Problems along the way (Using Proguard, Native Libraries)
- - Integration with the Android Ecosystem (e.g Signing an APK, Profiling/Debugging)
- - Exploring rough limits of devices (e.g. X Verts, Y Draw Calls, Z Texture Memory) for common devices
+  - Cross Platform Projects (Android Studio, Run Configurations: On Device, Emulator, Regular Desktop)
+  - Problems along the way (Using Proguard, Native Libraries)
+  - Integration with the Android Ecosystem (e.g Signing an APK, Profiling/Debugging)
+  - Exploring rough limits of devices (e.g. X Verts, Y Draw Calls, Z Texture Memory) for common devices
 - Working tightly with the core team to test and fix android related problems.
 
 #### Skills required/preferred (outline of skills required)
+
 - Knowledge of Android App Development (Having worked with Android Studio before) is required:
- - Building an UI
- - Lifecycle of Activities
- - Getting the Android Emulator to work
- - Having an Android Based Smartphone (can't do much without it, sorry)
- - Using ADB to Debug Problems
+  - Building an UI
+  - Lifecycle of Activities
+  - Getting the Android Emulator to work
+  - Having an Android Based Smartphone (can't do much without it, sorry)
+  - Using ADB to Debug Problems
 - Knowledge of Java is required
 - Basics of Using Gradle
 - Good English Skills to formulate an understandable documentation
 
 #### Tests (Students will do one or more of the following tests before contacting the mentors)
+
 - Build an Android App which shows our default [Blue Quad Example](https://wiki.jmonkeyengine.org/jme3/beginner/hello_simpleapplication.html#code-sample)
+
 #### Possible mentor
-Darkchaos/[MeFisto94](https://github.com/MeFisto94)
+
+[Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)
+
 #### Difficulty of the project
+
 With existing Android Development Experience: Simple - Medium
 The difficulty for this project is mostly coming from learning the jMonkeyEngine Eco-System and GLSL to fix potential Android/ES only problems.
+
 #### Further Reading (links to code, docs and conversations)
-https://github.com/jMonkeyEngine/JmeAndroidDemo
-https://play.google.com/store/apps/details?id=com.jme3.androiddemo (OFFLINE)
+
+https://github.com/jMonkeyEngine/JmeAndroidDemo  
+https://play.google.com/store/apps/details?id=com.jme3.androiddemo (OFFLINE)  
 
 ## Bring your own idea
 Students can propose their own ideas. Please make sure you have the following contents. You can also look at [past project list](GSoC_2014.md) for inspiration. Please note that we are prioritizing ideas that would be maintained even after GSoC.
-
-#### Project Description
-#### Expected outcome
-#### Skills required/preferred (outline of skills required)
-#### Possible mentor
-#### Difficulty of the project
-#### Further Reading (links to code, docs and conversations)
