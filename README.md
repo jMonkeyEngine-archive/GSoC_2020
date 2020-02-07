@@ -4,9 +4,9 @@ Welcome to the jMonkeyEngine Google Summer of Code [GSoC 2020](https://summerofc
 
 Everybody planning to participate should read the following,
 
-- [Google FAQ](https://developers.google.com/open-source/gsoc/faq) so you know how GSOC works,
+- [Google FAQ](https://developers.google.com/open-source/gsoc/faq) so you know how GSoC works,
 - Join us at [jMonkeyEngine Forum](https://hub.jmonkeyengine.org/)
-- You could also join our Discord channel at ** //todo **
+- Join our Discord channel [#gsoc-landing](https://discord.gg/NwxufRn)
 - [Here](https://hub.jmonkeyengine.org/g) you can find more about our team.
 
 ## Proposed Projects
@@ -16,7 +16,7 @@ Everybody planning to participate should read the following,
 | [Minie Simple Game](#minie-simple-game) | Needs student | [sgold](https://hub.jmonkeyengine.org/u/sgold/summary) / [stephengold](https://github.com/stephengold) |
 | [Asset Pipeline Workflow for Blender](#asset-pipeline-workflow-for-blender) | Needs student | [The_Leo](https://hub.jmonkeyengine.org/u/the_leo/summary) / [TehLeo](https://github.com/TehLeo) |
 | [Video Playback](#video-playback) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)  |
-| [Improve Shader Node](#improve-shader-node) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)  |
+| [Improve Shader Node](#improve-shader-node-incubating) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94)  |
 | [Integrate with Google Play Game Services](#integrate-with-google-play-game-services) | Needs student |  [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94) |
 | [Mobile Demos](#mobile-demos) | Needs student | [Darkchaos](https://hub.jmonkeyengine.org/u/darkchaos/summary) / [MeFisto94](https://github.com/MeFisto94) |
 | [Bring your own idea](#bring-your-own-idea) | |
